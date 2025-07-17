@@ -1,0 +1,12 @@
+site_name: RL in Isaac Lab
+nav:
+  - Introduction: index.md
+  - Installation: instruction.md
+  - Project Structure: about.md
+  - Jumpstart: jumpstart.md
+  - VR Navigation: vr_nav.md
+theme:
+  name: readthedocs
+  locale: en
+  highlightjs: true
+  
