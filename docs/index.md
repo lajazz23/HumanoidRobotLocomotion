@@ -16,18 +16,32 @@ Humanoid robots excel in human-centric environments. With little need for additi
 
 The [Unitree G1](https://www.unitree.com/g1) robot was developed by Unitree Robotics, a Chinese company based in Hangzhou, China in 2024. Standing at 12.7 m tall, this humanoid robot is optimal for research and development due to its open-source SDK. Due to its compatibility with Isaac Lab, it is a great candidate for research in reinforcement learning with minimal transfer cost. Furthermore, the robot is compatible with virtual reality and teleoperation. In our project, the G1 robot has 37 joint motors, allowing for the performance of flexible tasks. 
 
+![g1_in_isaacsim](assets/images/g1_sim.png)
+
 ### Unitree H1 Robot
 
 The [Unitree H1](https://www.unitree.com/h1/) is a bigger and more powerful robot compared to the G1. It is able to perform similar tasks, and excels in stability while performing locomotion tasks. The SDK is open-source, in C++, Python, and ROS2, easily allowing it to be worked on in research. 
+
+![h1_in_isaacsim](assets/images/h1_sim.png)
 
 ### Fourier GR-1
 
 The [Fourier GR-1](https://www.fftai.com/products-gr1) was developed by Fourier as a humanoid robot standing at 16.5 m tall. With built-in emotional systems, it mimics humans and can hold a proper human-robot conversation. It uses the Fourier Smart Actuator to integrate all movements into a single module. The GR1 has been deployed into industry to perform service tasks. While teleoperation is possible, it is not fully supported.
 
+![gr1_in_isaacsim](assets/images/gr1_sim.png)
+
+### Neo
+
+Neo Gamma is a humanoid robot designed for home use, developed by 1X, a tech company based in California. The robot is not bipedal, meaning that full-body locomotion cannot be tested. Neo uses embodied LLMs to learn its movements, making it easy to integrate AI agents. Furthermore, it is backed by OpenAI, allowing for longer-term support in its development.
+
+![neo_in_isaacsim](assets/images/neo_sim.png)
+
 ## How Do We Train the Robot?
 
-Training a robot from scratch can be difficult. It is important to explore 
+Training a robot from scratch can be difficult. It is important to explore training robot policies.
 
 ## Author
 
 Jasmin Lin
+
+jlin3@bnl.gov

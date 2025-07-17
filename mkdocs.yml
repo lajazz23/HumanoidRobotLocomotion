@@ -9,8 +9,8 @@ nav:
 theme:
   name: material
   custom_dir: overrides
-  logo_dark_mode: yellowlogo.png
-  logo_light_mode: greenlogo.png
+  logo_dark_mode: assets/yellowlogo.png
+  logo_light_mode: assets/greenlogo.png
   locale: en
   highlightjs: true
   palette:
@@ -27,5 +27,9 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+  features:
+    - content.code.copy
 extra_css:
   - assets/stylesheets/extra.css
+plugins:
+  - search
