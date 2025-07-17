@@ -1,4 +1,5 @@
-site_name: RL in Isaac Lab
+site_name: "RL in Isaac Lab"
+repo_url: https://github.com/lajazz23/Unitree-G1-IsaacLab-Locomotion/tree/main
 nav:
   - Introduction: index.md
   - Installation: instruction.md
@@ -6,7 +7,21 @@ nav:
   - Jumpstart: jumpstart.md
   - VR Navigation: vr_nav.md
 theme:
-  name: readthedocs
+  name: material
   locale: en
   highlightjs: true
-  
+  palette:
+    - scheme: default
+      primary: purple
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+        
+    - scheme: slate
+      primary: yellow
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+

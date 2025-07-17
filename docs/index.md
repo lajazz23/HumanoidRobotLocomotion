@@ -26,6 +26,7 @@ The [Fourier GR-1](https://www.fftai.com/products-gr1) was developed by Fourier 
 
 ## How Do We Train the Robot?
 
+Training a robot from scratch can be difficult. It is important to explore 
 
 ## Author
 
