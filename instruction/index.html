@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Installation - RL in Isaac Lab</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Installation";
+        var mkdocs_page_input_path = "instruction.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> RL in Isaac Lab
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Installation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#isaac-sim">Isaac Sim</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#isaac-lab">Isaac Lab</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">Project Structure</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../jumpstart/">Jumpstart</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../vr_nav/">VR Navigation</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">RL in Isaac Lab</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Installation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="getting-started-with-isaaclab">Getting Started With IsaacLab</h1>
+<p>This section serves as instructions that I followed to successfully set up my Isaac Lab environment. Instructions are originally found on the Isaac Lab <a href="https://isaac-sim.github.io/IsaacLab/main/index.html">website</a>. You can find their GitHub <a href="https://github.com/isaac-sim/IsaacLab">here</a>.</p>
+<h2 id="requirements">Requirements</h2>
+<p>To determine if your current set up is optimal to run Isaac Lab and Isaac Sim, you can install the NVIDIA Isaac Sim compatibility checker, found in the Omniverse Launcher. It is important to know that, by October 2025, the Omniverse Launcher will be deprecated. You may reference the Isaac Lab website for minimum dependencies.</p>
+<p>Our project was run on the following specifications:</p>
+<ul>
+<li>NVIDIA GeForce RTX 4090<ul>
+<li>Driver Version 551.61</li>
+<li>25.76 GB VRAM</li>
+</ul>
+</li>
+<li>Intel(R) Core (TM) i9-14900KF<ul>
+<li>32 CPU cores</li>
+<li>68.42 GB RAM</li>
+<li>7315 GB Storage</li>
+</ul>
+</li>
+<li>Windows 11 Pro v24H2</li>
+<li>Anaconda</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Isaac Lab is built on top of Isaac Sim, so we will have to install that first. Our device is Windows-based. To find instructions for the Linux installation, please consult the Isaac Lab website.</p>
+<h3 id="isaac-sim">Isaac Sim</h3>
+<p>To begin, we create a virtual environment called, "isaaclab" with python 3.10 inside Windows Terminal, and activate it. </p>
+<pre><code>conda create -n isaaclab python=3.10
+conda activate isaaclab
+</code></pre>
+<p>Next, we install PyTorch that is compatible with our system's CUDA version. In this case, we had CUDA 12.4:</p>
+<pre><code>pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
+</code></pre>
+<p>The Isaac Lab repository recommends updating pip:</p>
+<pre><code>python -m pip install --upgrade pip
+</code></pre>
+<p>To install the Isaac Sim packages, we ran the following:</p>
+<pre><code>pip install &quot;isaacsim[all,extscache]==4.5.0&quot; --extra-index-url https://pypi.nvidia.com
+</code></pre>
+<p>After this, Isaac Sim is fully installed. To test if this is true, we run <code>isaacsim</code> inside the terminal. After a few minutes, the Isaac Sim application will open, indicating a successful installation.</p>
+<h3 id="isaac-lab">Isaac Lab</h3>
+<p>Next, we can begin the installation of Isaac Lab. To begin, clone the repository:</p>
+<pre><code>git clone https://github.com/isaac-sim/IsaacLab.git
+</code></pre>
+<p>Navigate into the folder and install Isaac Lab:</p>
+<pre><code>cd IsaacLab
+isaaclab.bat --install
+</code></pre>
+<p>After installation, open a demo file:</p>
+<pre><code>isaaclab.bat -p scripts\tutorials\00_sim\create_empty.py
+</code></pre>
+<p>This should open Isaac Sim, with Isaac Lab inside it.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral float-right" title="Project Structure">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
