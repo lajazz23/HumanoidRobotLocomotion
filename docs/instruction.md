@@ -16,7 +16,7 @@ Our project was run on the following specifications:
     - 68.42 GB RAM
     - 7315 GB Storage
 - Windows 11 Pro v24H2
-- Anaconda
+- Anaconda 24.11.1
 
 ## Installation
 
