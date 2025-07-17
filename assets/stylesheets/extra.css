@@ -1,0 +1,11 @@
+#logo_dark_mode {
+  display: none;
+}
+
+[data-md-color-scheme="slate"] #logo_light_mode {
+  display: none;
+}
+
+[data-md-color-scheme="slate"] #logo_dark_mode {
+  display: inline;
+}
