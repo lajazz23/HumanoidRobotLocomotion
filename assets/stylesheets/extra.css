@@ -9,3 +9,15 @@
 [data-md-color-scheme="slate"] #logo_dark_mode {
   display: inline;
 }
+
+hr {
+    display: none;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
