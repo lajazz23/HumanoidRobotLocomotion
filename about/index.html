@@ -20,7 +20,7 @@
     
     
       
-        <title>Project Structure - RL in Isaac Lab</title>
+        <title>Project Structure - Reinforcement Learning in Isaac Lab</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="RL in Isaac Lab" class="md-header__button md-logo" aria-label="RL in Isaac Lab" data-md-component="logo">
+    <a href=".." title="Reinforcement Learning in Isaac Lab" class="md-header__button md-logo" aria-label="Reinforcement Learning in Isaac Lab" data-md-component="logo">
       <img class="logo" id="logo_light_mode" src="../assets/greenlogo.png" alt="Light Mode Logo">
 <img class="logo" id="logo_dark_mode" src="../assets/yellowlogo.png" alt="Dark Mode Logo">
     </a>
@@ -102,7 +102,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            RL in Isaac Lab
+            Reinforcement Learning in Isaac Lab
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -224,11 +224,11 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="RL in Isaac Lab" class="md-nav__button md-logo" aria-label="RL in Isaac Lab" data-md-component="logo">
+    <a href=".." title="Reinforcement Learning in Isaac Lab" class="md-nav__button md-logo" aria-label="Reinforcement Learning in Isaac Lab" data-md-component="logo">
       <img class="logo" id="logo_light_mode" src="../assets/greenlogo.png" alt="Light Mode Logo">
 <img class="logo" id="logo_dark_mode" src="../assets/yellowlogo.png" alt="Dark Mode Logo">
     </a>
-    RL in Isaac Lab
+    Reinforcement Learning in Isaac Lab
   </label>
   
     <div class="md-nav__source">
@@ -305,6 +305,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Project Structure
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -316,6 +329,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#joint-indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joint Indices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Joint Indices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unitree-g1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unitree G1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unitree-h1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unitree H1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -385,6 +450,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#joint-indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joint Indices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Joint Indices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unitree-g1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unitree G1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unitree-h1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unitree H1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -403,6 +509,220 @@
 
 
 <h1 id="description-of-project">Description of Project</h1>
+<h2 id="joint-indices">Joint Indices</h2>
+<p>Knowing the joint indices can be very helpful in changing reward parameters and customizing training.</p>
+<h3 id="unitree-g1">Unitree G1</h3>
+<p>The Unitree G1 robot in Isaac Sim comes pre-configured with a total of 37 joints:</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th style="text-align: left;">Joint Name</th>
+<th>Index</th>
+<th style="text-align: left;">Joint Name</th>
+<th>Index</th>
+<th style="text-align: left;">Joint Name</th>
+<th>Index</th>
+<th style="text-align: left;">Joint name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td style="text-align: left;">left hip pitch</td>
+<td>12</td>
+<td style="text-align: left;">right knee</td>
+<td>24</td>
+<td style="text-align: left;">left three</td>
+<td>36</td>
+<td style="text-align: left;">right two</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align: left;">right hip pitch</td>
+<td>13</td>
+<td style="text-align: left;">left shoulder yaw</td>
+<td>26</td>
+<td style="text-align: left;">left zero</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: left;">torso</td>
+<td>14</td>
+<td style="text-align: left;">right shoulder yaw</td>
+<td>27</td>
+<td style="text-align: left;">right five</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: left;">left hip roll</td>
+<td>15</td>
+<td style="text-align: left;">left ankle pitch</td>
+<td>28</td>
+<td style="text-align: left;">right three</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: left;">right hip roll</td>
+<td>16</td>
+<td style="text-align: left;">right ankle pitch</td>
+<td>29</td>
+<td style="text-align: left;">right zero</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align: left;">left shoulder pitch</td>
+<td>17</td>
+<td style="text-align: left;">left elbow pitch</td>
+<td>30</td>
+<td style="text-align: left;">left six</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align: left;">right shoulder pitch</td>
+<td>18</td>
+<td style="text-align: left;">right elbow pitch</td>
+<td>31</td>
+<td style="text-align: left;">left four</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align: left;">left hip yaw</td>
+<td>19</td>
+<td style="text-align: left;">left ankle roll</td>
+<td>32</td>
+<td style="text-align: left;">left one</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align: left;">right hip yaw</td>
+<td>20</td>
+<td style="text-align: left;">right ankle roll</td>
+<td>33</td>
+<td style="text-align: left;">right six</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>9</td>
+<td style="text-align: left;">left shoulder roll</td>
+<td>21</td>
+<td style="text-align: left;">left elbow roll</td>
+<td>34</td>
+<td style="text-align: left;">right four</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>10</td>
+<td style="text-align: left;">right shoulder roll</td>
+<td>22</td>
+<td style="text-align: left;">right elbow roll</td>
+<td>35</td>
+<td style="text-align: left;">right one</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td>11</td>
+<td style="text-align: left;">left knee</td>
+<td>23</td>
+<td style="text-align: left;">left five</td>
+<td>36</td>
+<td style="text-align: left;">left two</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="unitree-h1">Unitree H1</h3>
+<p>The Unitree H1 comes in Isaac Sim with just 19 joints:</p>
+<table>
+<thead>
+<tr>
+<th>Index</th>
+<th style="text-align: left;">Joint Name</th>
+<th>Index</th>
+<th style="text-align: left;">Joint Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td style="text-align: left;">left hip yaw</td>
+<td>10</td>
+<td style="text-align: left;">right ankle</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align: left;">right hip yaw</td>
+<td>11</td>
+<td style="text-align: left;">left shoulder pitch</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: left;">torso</td>
+<td>12</td>
+<td style="text-align: left;">right shoulder pitch</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: left;">left hip roll</td>
+<td>13</td>
+<td style="text-align: left;">left shoulder roll</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: left;">left hip pitch</td>
+<td>14</td>
+<td style="text-align: left;">left shoulder yaw</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align: left;">left knee</td>
+<td>15</td>
+<td style="text-align: left;">left elbow</td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align: left;">left ankle</td>
+<td>16</td>
+<td style="text-align: left;">right shoulder roll</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align: left;">right hip roll</td>
+<td>17</td>
+<td style="text-align: left;">right shoulder yaw</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align: left;">right hip pitch</td>
+<td>18</td>
+<td style="text-align: left;">right elbow</td>
+</tr>
+<tr>
+<td>9</td>
+<td style="text-align: left;">right knee</td>
+<td></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 
 
 
