@@ -89,8 +89,8 @@
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="RL in Isaac Lab" class="md-header__button md-logo" aria-label="RL in Isaac Lab" data-md-component="logo">
-      <img class="logo" id="logo_light_mode" src="greenlogo.png" alt="Light Mode Logo">
-<img class="logo" id="logo_dark_mode" src="yellowlogo.png" alt="Dark Mode Logo">
+      <img class="logo" id="logo_light_mode" src="assets/greenlogo.png" alt="Light Mode Logo">
+<img class="logo" id="logo_dark_mode" src="assets/yellowlogo.png" alt="Dark Mode Logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
@@ -223,8 +223,8 @@
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="RL in Isaac Lab" class="md-nav__button md-logo" aria-label="RL in Isaac Lab" data-md-component="logo">
-      <img class="logo" id="logo_light_mode" src="greenlogo.png" alt="Light Mode Logo">
-<img class="logo" id="logo_dark_mode" src="yellowlogo.png" alt="Dark Mode Logo">
+      <img class="logo" id="logo_light_mode" src="assets/greenlogo.png" alt="Light Mode Logo">
+<img class="logo" id="logo_dark_mode" src="assets/yellowlogo.png" alt="Dark Mode Logo">
     </a>
     RL in Isaac Lab
   </label>
@@ -345,17 +345,44 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-do-we-train-the-robot" class="md-nav__link">
+          <li class="md-nav__item">
+  <a href="#neo" class="md-nav__link">
     <span class="md-ellipsis">
-      How Do We Train the Robot?
+      Neo
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poppy-humanoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poppy Humanoid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berkeley-humanoid-lite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Berkeley Humanoid Lite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hopejr" class="md-nav__link">
+    <span class="md-ellipsis">
+      HopeJr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -427,12 +454,12 @@
   
   
     <li class="md-nav__item">
-      <a href="jumpstart/" class="md-nav__link">
+      <a href="training/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Jumpstart
+    Training
     
   </span>
   
@@ -449,12 +476,12 @@
   
   
     <li class="md-nav__item">
-      <a href="vr_nav/" class="md-nav__link">
+      <a href="other/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    VR Navigation
+    Other
     
   </span>
   
@@ -536,17 +563,44 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-do-we-train-the-robot" class="md-nav__link">
+          <li class="md-nav__item">
+  <a href="#neo" class="md-nav__link">
     <span class="md-ellipsis">
-      How Do We Train the Robot?
+      Neo
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poppy-humanoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poppy Humanoid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#berkeley-humanoid-lite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Berkeley Humanoid Lite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hopejr" class="md-nav__link">
+    <span class="md-ellipsis">
+      HopeJr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -587,14 +641,25 @@
 <p>Humanoid robots excel in human-centric environments. With little need for additional accommodations, humanoid robots exist as a practical tool for performing tasks that are unsafe, repetitive, or impractical for humans.​</p>
 <h3 id="unitree-g1-robot">Unitree G1 Robot</h3>
 <p>The <a href="https://www.unitree.com/g1">Unitree G1</a> robot was developed by Unitree Robotics, a Chinese company based in Hangzhou, China in 2024. Standing at 12.7 m tall, this humanoid robot is optimal for research and development due to its open-source SDK. Due to its compatibility with Isaac Lab, it is a great candidate for research in reinforcement learning with minimal transfer cost. Furthermore, the robot is compatible with virtual reality and teleoperation. In our project, the G1 robot has 37 joint motors, allowing for the performance of flexible tasks. </p>
+<p><img alt="g1_in_isaacsim" src="assets/images/g1_sim.png" /></p>
 <h3 id="unitree-h1-robot">Unitree H1 Robot</h3>
 <p>The <a href="https://www.unitree.com/h1/">Unitree H1</a> is a bigger and more powerful robot compared to the G1. It is able to perform similar tasks, and excels in stability while performing locomotion tasks. The SDK is open-source, in C++, Python, and ROS2, easily allowing it to be worked on in research. </p>
+<p><img alt="h1_in_isaacsim" src="assets/images/h1_sim.png" /></p>
 <h3 id="fourier-gr-1">Fourier GR-1</h3>
 <p>The <a href="https://www.fftai.com/products-gr1">Fourier GR-1</a> was developed by Fourier as a humanoid robot standing at 16.5 m tall. With built-in emotional systems, it mimics humans and can hold a proper human-robot conversation. It uses the Fourier Smart Actuator to integrate all movements into a single module. The GR1 has been deployed into industry to perform service tasks. While teleoperation is possible, it is not fully supported.</p>
-<h2 id="how-do-we-train-the-robot">How Do We Train the Robot?</h2>
-<p>Training a robot from scratch can be difficult. It is important to explore </p>
+<p><img alt="gr1_in_isaacsim" src="assets/images/gr1_sim.png" /></p>
+<h3 id="neo">Neo</h3>
+<p>Neo Gamma is a humanoid robot designed for home use, developed by 1X, a tech company based in California. The robot is not bipedal, meaning that full-body locomotion cannot be tested. Neo uses embodied LLMs to learn its movements, making it easy to integrate AI agents. Furthermore, it is backed by OpenAI, allowing for longer-term support in its development.</p>
+<p><img alt="neo_in_isaacsim" src="assets/images/neo_sim.png" /></p>
+<h3 id="poppy-humanoid">Poppy Humanoid</h3>
+<p><a href="https://www.poppy-project.org/en/for-science/">Poppy</a> is an open-source, 3D-printable humanoid robot created by the Flowers team at Inria. Poppy has been designed to be able to dance, walk, interact with humans, and perform.  it contains 25-DoF with an actuated vertebral column.</p>
+<h3 id="berkeley-humanoid-lite">Berkeley Humanoid Lite</h3>
+<p>The <a href="https://arxiv.org/pdf/2504.17249">Berkeley Humanoid Lite</a> is a robot designed at UC Berkely that is designed to be accessible and customizable. With parts widely available, the robot can be easily produced in any lab. With modular self-contained actuators and CAN communication, the robot can be configured with flexible joints and limbs.</p>
+<h3 id="hopejr">HopeJr</h3>
+<p><a href="https://huggingface.co/docs/lerobot/hope_jr">HopeJr</a> is an open-source robot developed by HuggingFace after their acquisition of Pollen Robotics.  It contains 66 DoF, making it very versatile. With its integration into the LeRobot toolchain, it has access to data recording, teleoperation, and RL-based training.</p>
 <h2 id="author">Author</h2>
 <p>Jasmin Lin</p>
+<p>jlin3@bnl.gov</p>
 
 
 
@@ -643,7 +708,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>

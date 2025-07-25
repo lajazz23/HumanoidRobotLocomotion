@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../jumpstart/">
+        <link rel="prev" href="../about/">
       
+      
+        <link rel="next" href="../other/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>VR Navigation - RL in Isaac Lab</title>
+        <title>Training - RL in Isaac Lab</title>
       
     
     
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#how-training-works-in-isaac-lab" class="md-skip">
           Skip to content
         </a>
       
@@ -89,8 +91,8 @@
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="RL in Isaac Lab" class="md-header__button md-logo" aria-label="RL in Isaac Lab" data-md-component="logo">
-      <img class="logo" id="logo_light_mode" src="../greenlogo.png" alt="Light Mode Logo">
-<img class="logo" id="logo_dark_mode" src="../yellowlogo.png" alt="Dark Mode Logo">
+      <img class="logo" id="logo_light_mode" src="../assets/greenlogo.png" alt="Light Mode Logo">
+<img class="logo" id="logo_dark_mode" src="../assets/yellowlogo.png" alt="Dark Mode Logo">
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              VR Navigation
+              Training
             
           </span>
         </div>
@@ -223,8 +225,8 @@
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="RL in Isaac Lab" class="md-nav__button md-logo" aria-label="RL in Isaac Lab" data-md-component="logo">
-      <img class="logo" id="logo_light_mode" src="../greenlogo.png" alt="Light Mode Logo">
-<img class="logo" id="logo_dark_mode" src="../yellowlogo.png" alt="Dark Mode Logo">
+      <img class="logo" id="logo_light_mode" src="../assets/greenlogo.png" alt="Light Mode Logo">
+<img class="logo" id="logo_dark_mode" src="../assets/yellowlogo.png" alt="Dark Mode Logo">
     </a>
     RL in Isaac Lab
   </label>
@@ -313,28 +315,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../jumpstart/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Jumpstart
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -347,18 +327,81 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Training
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    VR Navigation
+    Training
     
   </span>
   
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#initiating-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initiating Training
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Other
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -383,6 +426,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#initiating-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initiating Training
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -400,7 +460,11 @@
   
 
 
-<h1 id="_1"></h1>
+<h1 id="how-training-works-in-isaac-lab">How Training Works in Isaac Lab</h1>
+<p>In Isaac Lab, training is performed through </p>
+<h2 id="initiating-training">Initiating Training</h2>
+<pre><code>python scripts/reinforcement_learning/skrl/train.py --task=Isaac-Velocity-Rough-G1-v0
+</code></pre>
 
 
 
@@ -449,7 +513,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>

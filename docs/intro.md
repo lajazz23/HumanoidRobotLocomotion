@@ -36,9 +36,16 @@ Neo Gamma is a humanoid robot designed for home use, developed by 1X, a tech com
 
 ![neo_in_isaacsim](assets/images/neo_sim.png)
 
-## How Do We Train the Robot?
+### Poppy Humanoid
 
-Training a robot from scratch can be difficult. It is important to explore training robot policies.
+[Poppy](https://www.poppy-project.org/en/for-science/) is an open-source, 3D-printable humanoid robot created by the Flowers team at Inria. Poppy has been designed to be able to dance, walk, interact with humans, and perform.  it contains 25-DoF with an actuated vertebral column.
+
+### Berkeley Humanoid Lite
+The [Berkeley Humanoid Lite](https://arxiv.org/pdf/2504.17249) is a robot designed at UC Berkely that is designed to be accessible and customizable. With parts widely available, the robot can be easily produced in any lab. With modular self-contained actuators and CAN communication, the robot can be configured with flexible joints and limbs.
+
+### HopeJr
+
+[HopeJr](https://huggingface.co/docs/lerobot/hope_jr) is an open-source robot developed by HuggingFace after their acquisition of Pollen Robotics.  It contains 66 DoF, making it very versatile. With its integration into the LeRobot toolchain, it has access to data recording, teleoperation, and RL-based training.
 
 ## Author
 
