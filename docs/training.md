@@ -7,3 +7,11 @@ Training can be initiated using the built-in `train.py` file. Trained models are
 ```
 python scripts/reinforcement_learning/skrl/train.py --task=Isaac-Velocity-Rough-G1-v0
 ```
+
+## Viewing Training Curves
+
+
+
+```
+tensorboard --logdir logs/skrl/g1_flat/
+```
